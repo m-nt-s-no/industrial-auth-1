@@ -85,4 +85,7 @@ Rails.application.configure do
 
   # Allow POST authenticity on Codespaces in dev
   config.action_controller.forgery_protection_origin_check = false
+
+  # turn off default raising for missing callback actions
+  config.action_controller.raise_on_missing_callback_actions = false
 end
