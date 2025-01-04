@@ -10,6 +10,10 @@ class UserPolicy < ApplicationPolicy
     user == current_user
   end
 
+  def discover?
+    feed?
+  end
+
   def show?
     true
   end
