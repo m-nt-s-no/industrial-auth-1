@@ -14,6 +14,10 @@ class UserPolicy < ApplicationPolicy
     feed?
   end
 
+  def liked?
+    feed?
+  end
+
   def show?
     true
   end
