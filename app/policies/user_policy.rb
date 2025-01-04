@@ -7,7 +7,7 @@ class UserPolicy < ApplicationPolicy
   end
 
   def feed?
-    true
+    user == current_user
   end
 
   def show?
